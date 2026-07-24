@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Hugo
+blog-src/resources/
+blog-src/.hugo_build.lock

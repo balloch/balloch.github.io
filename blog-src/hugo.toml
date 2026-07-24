@@ -1,0 +1,54 @@
+baseURL = 'https://jballoch.com/blog/'
+locale = 'en-us'
+title = "Jonathan Balloch's Blog"
+theme = 'PaperMod'
+publishDir = '../blog'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  env = 'production'
+  title = "Jonathan Balloch's Blog"
+  description = "Notes on reinforcement learning, robotics, autonomy engineering, and academic research."
+  author = "Jonathan Balloch"
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+
+  [params.homeInfoParams]
+    Title = "Jonathan Balloch"
+    Content = "Applied scientist and engineer writing about reinforcement learning, robotics, and academic research. Back to the [main site](https://jballoch.com/)."
+
+[[menu.main]]
+  identifier = 'home'
+  name = 'Home'
+  url = 'https://jballoch.com/'
+  weight = 1
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = 'posts/'
+  weight = 2
+
+[[menu.main]]
+  identifier = 'tags'
+  name = 'Tags'
+  url = 'tags/'
+  weight = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
